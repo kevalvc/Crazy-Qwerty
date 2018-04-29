@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nblue">
+
+    <Button
+        android:id="@+id/play2"
+        android:layout_width="177dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="464dp"
+        android:background="@layout/new_game_rsc"
+        android:onClick="play_activity_main"
+        android:text="Play Again?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/yourscoretext"
+        android:layout_width="177dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="37dp"
+        android:layout_marginTop="119dp"
+        android:background="@layout/rounded_check"
+        android:text="High Score: "
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/myScore"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/myScore"
+        android:layout_width="177dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="37dp"
+        android:layout_marginTop="8dp"
+        android:background="@layout/your_score"
+        android:text="Your Score: "
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/viewData"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.994" />
+
+    <Button
+        android:id="@+id/viewData"
+        android:layout_width="177dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="128dp"
+        android:layout_marginTop="8dp"
+        android:background="@layout/view_words"
+        android:onClick="viewWordsData"
+        android:text="View Words"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/play2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="General">
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/correct_sound"
+            android:summary="@string/summary_correct_sound"
+            android:title="@string/title_correct_sound" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/key_vibration_name"
+            android:summary="@string/summary_default_vibration"
+            android:title="@string/title_vibration" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/key_key_vibes"
+            android:summary="@string/summary_key_vibes"
+            android:title="@string/title_key_vibes" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_title_game">
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="@string/visible_keys"
+            android:title="@string/title_visible_keys" />
+
+        <!--<RingtonePreference-->
+            <!--android:defaultValue="content://settings/system/notification_sound"-->
+            <!--android:dependency="notifications_new_message"-->
+            <!--android:key="@string/key_notifications_new_message_ringtone"-->
+            <!--android:ringtoneType="notification"-->
+            <!--android:summary="@string/summary_choose_ringtone"-->
+            <!--android:title="@string/pref_title_ringtone" />-->
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="@string/key_vibrate"
+            android:summary="@string/summary_vibrate"
+            android:title="@string/title_vibrate" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_header_about">
+
+        <Preference
+            android:selectable="false"
+            android:summary="@string/summary_about" />
+
+        <Preference
+            android:summary="@string/app_version"
+            android:title="@string/title_version" />
+
+        <Preference
+            android:key="@string/key_send_feedback"
+            android:summary="@string/summary_support"
+            android:title="@string/title_send_feedback" />
+
+
+    </PreferenceCategory>
+</PreferenceScreen>
