@@ -16,7 +16,7 @@ import android.preference.RingtonePreference;
 import android.text.TextUtils;
 import android.view.MenuItem;
 
-public class SettingsPrefActivity extends AppCompatPreferenceActivity {
+class SettingsPrefActivity extends AppCompatPreferenceActivity {
     private static final String TAG = SettingsPrefActivity.class.getSimpleName();
 
     @Override

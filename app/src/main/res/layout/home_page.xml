@@ -10,41 +10,43 @@
         android:id="@+id/play"
         android:layout_width="177dp"
         android:layout_height="48dp"
-        android:layout_marginBottom="104dp"
+        android:layout_marginBottom="120dp"
         android:background="@layout/new_game_rsc"
         android:onClick="play_activity_main"
         android:text="New Game"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="211dp"
+        android:layout_width="250dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="3dp"
         android:layout_marginBottom="123dp"
-        android:layout_marginTop="44dp"
+        android:background="@drawable/keyboard2"
         app:layout_constraintBottom_toTopOf="@+id/play2"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/keyboard" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="76dp"
         android:layout_marginTop="8dp"
+        android:layout_marginBottom="76dp"
         android:fontFamily="@font/raleway"
         android:text="Crazy Qwerty"
         android:textAlignment="center"
-        android:textColor="@android:color/white"
+        android:textColor="@color/neon_teal"
         android:textSize="50sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/play"
@@ -54,33 +56,33 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:layout_constraintVertical_bias="0.0" />
 
+    <ImageButton
+        android:id="@+id/settingsButton"
+        android:layout_width="66dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/settings_icon_1"
+        android:onClick="play_settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/highscore"
         android:layout_width="177dp"
         android:layout_height="48dp"
-        android:layout_marginBottom="32dp"
         android:layout_marginTop="44dp"
+        android:layout_marginBottom="32dp"
         android:background="@layout/purple_rsc"
         android:text="High Score"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/play"
         app:layout_constraintVertical_bias="1.0" />
-
-    <ImageButton
-        android:id="@+id/settingsButton"
-        android:onClick="play_settings"
-        android:layout_width="69dp"
-        android:layout_height="59dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginTop="8dp"
-        android:background="@layout/settings_rsc"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/settings" />
 
 </android.support.constraint.ConstraintLayout>
